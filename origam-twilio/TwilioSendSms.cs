@@ -20,6 +20,7 @@ along with ORIGAM. If not, see <http://www.gnu.org/licenses/>.
 #endregion
 using System;
 using Microsoft.Extensions.Configuration;
+using Origam.Sms;
 using Origam.Twilio;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
@@ -27,7 +28,7 @@ using Twilio.Types;
 
 namespace Origam.Twilio
 {
-    public class TwilioSendSms
+    public class TwilioSendSms : ISmsService
     {
         private static TwilioSettings settings;
 
@@ -54,9 +55,12 @@ namespace Origam.Twilio
             }
         }
 
-        // if settings is null, load settings from config, if not return settings.
+        public void SendSms(string from, string to, string body)
+        {
+            SendSms(to, body);
+        }
         
-        public void SendSms(string to, string body)
+        private void SendSms(string to, string body)
         {
             var accountSid = Settings.AccountSid;
             var authToken = Settings.AuthToken;
