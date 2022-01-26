@@ -45,11 +45,11 @@ jobs:
         languages: ${{ matrix.language }}
 
     - name: NuGet Restore
-      run: nuget restore origam-twilio.sln
+      run: nuget restore Origam.Twilio.sln
     
     - name: Build Backend
       run: |
-       dotnet build origam-twilio.sln --configuration="Release"
+       dotnet build Origam.Twilio.sln --configuration="Release"
        
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
