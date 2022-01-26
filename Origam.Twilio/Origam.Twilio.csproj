@@ -29,4 +29,12 @@
       <PackageReference Include="Twilio" Version="5.68.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Resources\origam-icon-large.png" />
+      <Resource Include="Resources\origam-icon-large.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </Resource>
+    </ItemGroup>
+
 </Project>
