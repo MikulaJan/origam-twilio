@@ -3,6 +3,19 @@
     <PropertyGroup>
         <RootNamespace>Origam.Twilio</RootNamespace>
         <TargetFramework>netstandard2.1</TargetFramework>
+        <Description>Implementation of an sms sender class for the Origam infrastructure using Twilio</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Origam.Twilio</Title>
+        <Authors>origam</Authors>
+        <PackageProjectUrl>https://community.origam.com/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/origam/origam-twilio</RepositoryUrl>
+        <PackageTags>origam sms</PackageTags>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+		<PackageIcon>origam-icon-large.png</PackageIcon>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+		<PackageVersion>2.0.0</PackageVersion>
+        <Version>2.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
