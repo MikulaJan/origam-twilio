@@ -25,7 +25,7 @@
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
       <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
       <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
-      <PackageReference Include="Origam-sms" Version="1.0.2" />
+      <PackageReference Include="Origam.Sms" Version="2.0.1" />
       <PackageReference Include="Twilio" Version="5.68.1" />
     </ItemGroup>
 
