@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "origam-twilio", "origam-twilio\origam-twilio.csproj", "{F4E21A71-8F4F-4E5E-B303-A9B71403A67A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Origam.Twilio", "Origam.Twilio\Origam.Twilio.csproj", "{F4E21A71-8F4F-4E5E-B303-A9B71403A67A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

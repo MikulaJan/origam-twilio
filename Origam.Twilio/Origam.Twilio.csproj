@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>Origam.Twilio</RootNamespace>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Description>Implementation of an sms sender class for the Origam infrastructure using Twilio</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Origam.Twilio</Title>
+        <Authors>origam</Authors>
+        <PackageProjectUrl>https://community.origam.com/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/origam/origam-twilio</RepositoryUrl>
+        <PackageTags>origam sms</PackageTags>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+		<PackageIcon>origam-icon-large.png</PackageIcon>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+		<PackageVersion>2.0.0</PackageVersion>
+        <Version>2.0.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+      <PackageReference Include="Origam.Sms" Version="2.0.1" />
+      <PackageReference Include="Twilio" Version="5.68.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\origam-icon-large.png" />
+      <Resource Include="Resources\origam-icon-large.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </Resource>
+    </ItemGroup>
+
+</Project>
