@@ -49,7 +49,7 @@ jobs:
     
     - name: Build Backend
       run: |
-       dotnet build Origam.Twilio.sln --configuration="Release"
+       dotnet build /p:UseSharedCompilation=false Origam.Twilio.sln --configuration="Release"
        
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
